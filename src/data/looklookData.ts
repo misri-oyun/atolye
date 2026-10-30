@@ -1,0 +1,28 @@
+import { LookSymbol } from '../types';
+
+export const LOOKLOOK_SYMBOLS: LookSymbol[] = [
+  { id: 'star', name: 'Yıldız', iconName: 'Star', color: '#F59E0B' },
+  { id: 'heart', name: 'Kalp', iconName: 'Heart', color: '#EF4444' },
+  { id: 'zap', name: 'Şimşek', iconName: 'Zap', color: '#EAB308' },
+  { id: 'rocket', name: 'Roket', iconName: 'Rocket', color: '#6366F1' },
+  { id: 'gem', name: 'Elmas', iconName: 'Gem', color: '#06B6D4' },
+  { id: 'sun', name: 'Güneş', iconName: 'Sun', color: '#F97316' },
+  { id: 'moon', name: 'Hilal', iconName: 'Moon', color: '#8B5CF6' },
+  { id: 'bell', name: 'Zil', iconName: 'Bell', color: '#10B981' },
+  { id: 'flame', name: 'Alev', iconName: 'Flame', color: '#DC2626' },
+  { id: 'snowflake', name: 'Kar Tanesi', iconName: 'Snowflake', color: '#38BDF8' },
+  { id: 'crown', name: 'Taç', iconName: 'Crown', color: '#EAB308' },
+  { id: 'compass', name: 'Pusula', iconName: 'Compass', color: '#0284C7' },
+  { id: 'anchor', name: 'Çapa', iconName: 'Anchor', color: '#334155' },
+  { id: 'key', name: 'Anahtar', iconName: 'Key', color: '#D97706' },
+  { id: 'music', name: 'Nota', iconName: 'Music', color: '#A855F7' },
+  { id: 'palette', name: 'Palet', iconName: 'Palette', color: '#EC4899' },
+  { id: 'shield', name: 'Kalkan', iconName: 'Shield', color: '#2563EB' },
+  { id: 'target', name: 'Hedef', iconName: 'Target', color: '#E11D48' },
+  { id: 'trophy', name: 'Kupa', iconName: 'Trophy', color: '#CA8A04' },
+  { id: 'feather', name: 'Tüy', iconName: 'Feather', color: '#14B8A6' },
+  { id: 'sparkles', name: 'Işıltı', iconName: 'Sparkles', color: '#F59E0B' },
+  { id: 'lightbulb', name: 'Ampul', iconName: 'Lightbulb', color: '#FACC15' },
+  { id: 'flower', name: 'Çiçek', iconName: 'Flower2', color: '#F43F5E' },
+  { id: 'eye', name: 'Göz', iconName: 'Eye', color: '#4F46E5' },
+];
