@@ -80,7 +80,13 @@ export default function App() {
   const scrollToGame = (elementId: string) => {
     const el = document.getElementById(elementId);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const headerOffset = window.innerWidth < 640 ? 110 : 75;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
