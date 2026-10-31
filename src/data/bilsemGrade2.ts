@@ -42,10 +42,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '4', isCorrect: false },
-      { label: 'B', text: '5 (3 basamak + 2 üst kat)', isCorrect: true },
+      { label: 'B', text: '5 ', isCorrect: true },
       { label: 'C', text: '6', isCorrect: false },
       { label: 'D', text: '7', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 5. Gerekçe: 3 basamak + 2 üst kat.'
   },
   {
     num: 3,
@@ -61,7 +62,7 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       </div>
     `,
     options: [
-      { label: 'A', text: 'Ortada artı işareti (+)', isCorrect: false },
+      { label: 'A', text: 'Ortada artı işareti ', isCorrect: false },
       { label: 'B', text: 'Karşılıklı iki köşede paralel çapraz kat çizgileri', isCorrect: true },
       { label: 'C', text: 'Ortada tek tam daire', isCorrect: false },
       { label: 'D', text: 'Kağıdın dört kenarında dik çizgiler', isCorrect: false }
@@ -73,16 +74,18 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '1 Kare = 2 Üçgen ve 1 Daire = 1 Kare + 1 Üçgen olduğuna göre 1 Daire kaç Üçgene eşittir?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>1 Kare = 2 Üçgen</div>
-        <div>1 Daire = 1 Kare + 1 Üçgen ➔ <span class="text-purple-700 font-black">1 Daire = ? Üçgen</span></div>
+        <div>1. Terazi: 1 Kare = 2 Üçgen</div>
+        <div>2. Terazi: 1 Daire = 1 Kare + 1 Üçgen</div>
+        <div class="text-indigo-600 font-black">Hedef: 1 Daire = ? Üçgen</div>
       </div>
     `,
     options: [
       { label: 'A', text: '2', isCorrect: false },
       { label: 'B', text: '4', isCorrect: false },
-      { label: 'C', text: '3 Üçgen (2 + 1 = 3)', isCorrect: true },
+      { label: 'C', text: '3 Üçgen ', isCorrect: true },
       { label: 'D', text: '5', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 3 Üçgen. Gerekçe: 2 + 1 = 3.'
   },
   {
     num: 5,
@@ -101,11 +104,12 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       </div>
     `,
     options: [
-      { label: 'A', text: 'Saat Yönünün Tersine (↺)', isCorrect: false },
-      { label: 'B', text: 'Saat Yönünde (↻ Sağa)', isCorrect: true },
+      { label: 'A', text: 'Saat Yönünün Tersine ', isCorrect: false },
+      { label: 'B', text: 'Saat Yönünde ', isCorrect: true },
       { label: 'C', text: 'Dönmez, kilitlenir', isCorrect: false },
       { label: 'D', text: 'Sağa-sola titreşir', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Saat Yönünde. Gerekçe: ↻ Sağa.'
   },
   {
     num: 6,
@@ -118,10 +122,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: 'Daire içinde nokta', isCorrect: false },
-      { label: 'B', text: 'Kare içinde çarpı (×)', isCorrect: true },
-      { label: 'C', text: 'Üçgen içinde artı (+)', isCorrect: false },
+      { label: 'B', text: 'Kare içinde çarpı ', isCorrect: true },
+      { label: 'C', text: 'Üçgen içinde artı ', isCorrect: false },
       { label: 'D', text: 'Kare içinde nokta', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Kare içinde çarpı. Gerekçe: ×.'
   },
   {
     num: 7,
@@ -169,10 +174,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '5', isCorrect: false },
-      { label: 'B', text: '6 (1 + 2 + 3 = 6)', isCorrect: true },
+      { label: 'B', text: '6 ', isCorrect: true },
       { label: 'C', text: '7', isCorrect: false },
       { label: 'D', text: '8', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6. Gerekçe: 1 + 2 + 3 = 6.'
   },
   {
     num: 10,
@@ -186,9 +192,10 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '15', isCorrect: false },
       { label: 'B', text: '16', isCorrect: false },
-      { label: 'C', text: '17 (12 + 5 = 17)', isCorrect: true },
+      { label: 'C', text: '17 ', isCorrect: true },
       { label: 'D', text: '18', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 17. Gerekçe: 12 + 5 = 17.'
   },
   {
     num: 11,
@@ -204,11 +211,12 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       </div>
     `,
     options: [
-      { label: 'A', text: 'Birebir aynı E (Yatay simetriktir)', isCorrect: true },
+      { label: 'A', text: 'Birebir aynı E ', isCorrect: true },
       { label: 'B', text: '3 rakamı', isCorrect: false },
       { label: 'C', text: 'M harfi', isCorrect: false },
       { label: 'D', text: 'Ters dönmüş açık C', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Birebir aynı E. Gerekçe: Yatay simetriktir.'
   },
   {
     num: 12,
@@ -221,10 +229,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '1 küp', isCorrect: false },
-      { label: 'B', text: '2 küp (Arkadaki yüksek küp görünür)', isCorrect: true },
+      { label: 'B', text: '2 küp ', isCorrect: true },
       { label: 'C', text: '3 küp', isCorrect: false },
       { label: 'D', text: 'Küp görünmez', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 2 küp. Gerekçe: Arkadaki yüksek küp görünür.'
   },
   {
     num: 13,
@@ -252,16 +261,19 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '1 Üçgen = 3 kg, 2 Üçgen = 1 Kare ve 1 Kare + 1 Üçgen = 1 Daire olduğuna göre 1 Daire kaç kg\'dır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>Üçgen = 3 kg ➔ Kare = 6 kg</div>
-        <div>Daire = Kare (6) + Üçgen (3) = ? kg</div>
+        <div>▲ = 3 kg</div>
+        <div>■ = 2 × ▲</div>
+        <div>● = ■ + ▲</div>
+        <div class="text-indigo-600 font-black">● = ? kg</div>
       </div>
     `,
     options: [
       { label: 'A', text: '6 kg', isCorrect: false },
       { label: 'B', text: '8 kg', isCorrect: false },
-      { label: 'C', text: '9 kg (6 + 3 = 9)', isCorrect: true },
+      { label: 'C', text: '9 kg ', isCorrect: true },
       { label: 'D', text: '12 kg', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 9 kg. Gerekçe: 6 + 3 = 9.'
   },
   {
     num: 15,
@@ -276,7 +288,7 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       { label: 'A', text: 'Yalnızca Boş Dış Kare', isCorrect: true },
       { label: 'B', text: 'Merkezdeki Artı', isCorrect: false },
       { label: 'C', text: 'İç Daire', isCorrect: false },
-      { label: 'D', text: 'Hiçbir şey (Boşluk)', isCorrect: false }
+      { label: 'D', text: 'Hiçbir şey ', isCorrect: false }
     ]
   },
   {
@@ -293,10 +305,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '7', isCorrect: false },
-      { label: 'B', text: '8 (9 - 1 = 8)', isCorrect: true },
+      { label: 'B', text: '8 ', isCorrect: true },
       { label: 'C', text: '9', isCorrect: false },
       { label: 'D', text: '10', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 8. Gerekçe: 9 - 1 = 8.'
   },
   {
     num: 17,
@@ -310,9 +323,10 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '2', isCorrect: false },
       { label: 'B', text: '3', isCorrect: false },
-      { label: 'C', text: '4 (2 × 2 = 4)', isCorrect: true },
+      { label: 'C', text: '4 ', isCorrect: true },
       { label: 'D', text: '6', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 4. Gerekçe: 2 × 2 = 4.'
   },
   {
     num: 18,
@@ -325,10 +339,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '1 tur', isCorrect: false },
-      { label: 'B', text: '2 tur (12 ÷ 6 = 2)', isCorrect: true },
+      { label: 'B', text: '2 tur ', isCorrect: true },
       { label: 'C', text: 'Yarım tur', isCorrect: false },
       { label: 'D', text: '3 tur', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 2 tur. Gerekçe: 12 ÷ 6 = 2.'
   },
   {
     num: 19,
@@ -341,10 +356,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '5', isCorrect: false },
-      { label: 'B', text: '6 (7 - 1 = 6)', isCorrect: true },
+      { label: 'B', text: '6 ', isCorrect: true },
       { label: 'C', text: '4', isCorrect: false },
       { label: 'D', text: '2', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6. Gerekçe: 7 - 1 = 6.'
   },
   {
     num: 20,
@@ -357,10 +373,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '5', isCorrect: false },
-      { label: 'B', text: '6 (+2 eklenir)', isCorrect: true },
+      { label: 'B', text: '6 ', isCorrect: true },
       { label: 'C', text: '3', isCorrect: false },
       { label: 'D', text: '7', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6. Gerekçe: +2 eklenir.'
   },
   {
     num: 21,
@@ -390,9 +407,10 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: 'A', isCorrect: false },
       { label: 'B', text: 'B', isCorrect: false },
-      { label: 'C', text: 'C (En hafiftir)', isCorrect: true },
+      { label: 'C', text: 'C ', isCorrect: true },
       { label: 'D', text: 'A ve C eşittir', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: C. Gerekçe: En hafiftir.'
   },
   {
     num: 23,
@@ -411,10 +429,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '4', isCorrect: false },
-      { label: 'B', text: '5 (3 üst + 2 alt = 5)', isCorrect: true },
+      { label: 'B', text: '5 ', isCorrect: true },
       { label: 'C', text: '6', isCorrect: false },
       { label: 'D', text: '7', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 5. Gerekçe: 3 üst + 2 alt = 5.'
   },
   {
     num: 24,
@@ -426,28 +445,31 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       </div>
     `,
     options: [
-      { label: 'A', text: '1. Ok (→)', isCorrect: false },
-      { label: 'B', text: '2. Ok (→)', isCorrect: false },
-      { label: 'C', text: '3. Ok (← sola bakan)', isCorrect: true },
-      { label: 'D', text: '4. Ok (→)', isCorrect: false }
-    ]
+      { label: 'A', text: '1. Ok ', isCorrect: false },
+      { label: 'B', text: '2. Ok ', isCorrect: false },
+      { label: 'C', text: '3. Ok ', isCorrect: true },
+      { label: 'D', text: '4. Ok ', isCorrect: false }
+    ],
+    explanation: 'Doğru Çözüm: 3. Ok. Gerekçe: ← sola bakan.'
   },
   {
     num: 25,
     cat: 'Aritmetik Şifreler',
     prompt: '▲ + ▲ + ▲ = 12 ve ▲ + ■ = 9 olduğuna göre ■ kaçtır?',
     visual: `
-      <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>3▲ = 12 ➔ ▲ = 4</div>
-        <div>4 + ■ = 9 ➔ ■ = ?</div>
+      <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm font-mono">
+        <div>▲ + ▲ + ▲ = 12</div>
+        <div>▲ + ■ = 9</div>
+        <div class="text-indigo-600 font-black">■ = ?</div>
       </div>
     `,
     options: [
       { label: 'A', text: '4', isCorrect: false },
-      { label: 'B', text: '5 (9 - 4 = 5)', isCorrect: true },
+      { label: 'B', text: '5 ', isCorrect: true },
       { label: 'C', text: '6', isCorrect: false },
       { label: 'D', text: '3', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 5. Gerekçe: 9 - 4 = 5.'
   },
   {
     num: 26,
@@ -497,9 +519,10 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '2 kg', isCorrect: false },
       { label: 'B', text: '3 kg', isCorrect: false },
-      { label: 'C', text: '4 kg (4 ÷ 1 = 4)', isCorrect: true },
+      { label: 'C', text: '4 kg ', isCorrect: true },
       { label: 'D', text: '5 kg', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 4 kg. Gerekçe: 4 ÷ 1 = 4.'
   },
   {
     num: 29,
@@ -531,11 +554,12 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       </div>
     `,
     options: [
-      { label: 'A', text: '5 (4 kule + 1 köprü = 5)', isCorrect: true },
+      { label: 'A', text: '5 ', isCorrect: true },
       { label: 'B', text: '6', isCorrect: false },
       { label: 'C', text: '7', isCorrect: false },
       { label: 'D', text: '8', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 5. Gerekçe: 4 kule + 1 köprü = 5.'
   },
   {
     num: 31,
@@ -564,10 +588,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '9', isCorrect: false },
-      { label: 'B', text: '10 (Köşe sayısı × 2)', isCorrect: true },
+      { label: 'B', text: '10 ', isCorrect: true },
       { label: 'C', text: '12', isCorrect: false },
       { label: 'D', text: '15', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 10. Gerekçe: Köşe sayısı × 2.'
   },
   {
     num: 33,
@@ -600,9 +625,10 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '24', isCorrect: false },
       { label: 'B', text: '28', isCorrect: false },
-      { label: 'C', text: '32 (16 × 2 = 32)', isCorrect: true },
+      { label: 'C', text: '32 ', isCorrect: true },
       { label: 'D', text: '30', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 32. Gerekçe: 16 × 2 = 32.'
   },
   {
     num: 35,
@@ -615,10 +641,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: 'Mavi', isCorrect: false },
-      { label: 'B', text: 'Sarı (Renk karışım kuralı)', isCorrect: true },
+      { label: 'B', text: 'Sarı ', isCorrect: true },
       { label: 'C', text: 'Mor', isCorrect: false },
       { label: 'D', text: 'Yeşil', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Sarı. Gerekçe: Renk karışım kuralı.'
   },
   {
     num: 36,
@@ -633,8 +660,9 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       { label: 'A', text: 'Sağa', isCorrect: false },
       { label: 'B', text: 'Sola', isCorrect: false },
       { label: 'C', text: 'Aşağı', isCorrect: false },
-      { label: 'D', text: 'Yukarı (270° saat yönü = 90° tersi)', isCorrect: true }
-    ]
+      { label: 'D', text: 'Yukarı ', isCorrect: true }
+    ],
+    explanation: 'Doğru Çözüm: Yukarı. Gerekçe: 270° saat yönü = 90° tersi.'
   },
   {
     num: 37,
@@ -648,9 +676,10 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '12', isCorrect: false },
       { label: 'B', text: '13', isCorrect: false },
-      { label: 'C', text: '14 (9 + 4 + 1 = 14)', isCorrect: true },
+      { label: 'C', text: '14 ', isCorrect: true },
       { label: 'D', text: '16', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 14. Gerekçe: 9 + 4 + 1 = 14.'
   },
   {
     num: 38,
@@ -682,10 +711,11 @@ export const GRADE_2_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '6', isCorrect: false },
-      { label: 'B', text: '7 (7 + 3 = 10, 7 - 3 = 4)', isCorrect: true },
+      { label: 'B', text: '7 ', isCorrect: true },
       { label: 'C', text: '8', isCorrect: false },
       { label: 'D', text: '5', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 7. Gerekçe: 7 + 3 = 10, 7 - 3 = 4.'
   },
   {
     num: 40,

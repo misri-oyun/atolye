@@ -59,7 +59,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onLogin }) => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-3xl bg-gradient-to-tr from-amber-400 to-rose-500 text-white shadow-lg shadow-rose-500/20 text-3xl mb-3 animate-bounce">
             {selectedAvatar}
           </div>
-          <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 tracking-tight flex items-center justify-center gap-1.5">
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center justify-center gap-1.5">
             <span>Atölyeye Hoş Geldin!</span>
             <Sparkles className="w-6 h-6 text-amber-500 fill-amber-400" />
           </h2>
@@ -137,7 +137,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onLogin }) => {
           {/* Neşeli Büyük Buton */}
           <button
             type="submit"
-            className="w-full py-3.5 bg-gradient-to-r from-amber-500 via-rose-500 to-indigo-600 hover:from-amber-600 hover:via-rose-600 hover:to-indigo-700 text-white font-display font-black text-base rounded-2xl shadow-xl shadow-rose-500/25 active:scale-95 transition flex items-center justify-center gap-2 cursor-pointer mt-2"
+            className="w-full py-3.5 bg-gradient-to-r from-amber-500 via-rose-500 to-indigo-600 hover:from-amber-600 hover:via-rose-600 hover:to-indigo-700 text-white font-black text-base rounded-2xl shadow-xl shadow-rose-500/25 active:scale-95 transition flex items-center justify-center gap-2 cursor-pointer mt-2"
           >
             <span>Maceraya Başla!</span>
             <ArrowRight className="w-5 h-5" />

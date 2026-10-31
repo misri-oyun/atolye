@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { GraduationCap, Timer, ArrowLeft, ArrowRight, Award, CheckCircle2, RotateCcw, Boxes } from 'lucide-react';
+import {
+  GraduationCap,
+  Timer,
+  ArrowLeft,
+  ArrowRight,
+  Award,
+  CheckCircle2,
+  XCircle,
+  RotateCcw,
+  Boxes,
+  HelpCircle,
+  ChevronDown,
+  ChevronUp
+} from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { GRADE_1_EXAM_40_QUESTIONS } from '../../data/bilsemGrade1';
 import { GRADE_2_EXAM_40_QUESTIONS } from '../../data/bilsemGrade2';
@@ -25,6 +38,7 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
   const [timeLeft, setTimeLeft] = useState<number>(2400); // 40 dakika = 2400 saniye
   const [isExamActive, setIsExamActive] = useState<boolean>(false);
   const [showResult, setShowResult] = useState<boolean>(false);
+  const [showReview, setShowReview] = useState<boolean>(false);
 
   // Geri sayım sayacı
   useEffect(() => {
@@ -60,6 +74,7 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
     setTimeLeft(2400);
     setIsExamActive(true);
     setShowResult(false);
+    setShowReview(false);
   };
 
   const handleSelectOption = (optIdx: number) => {
@@ -88,6 +103,7 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
   const returnToHub = () => {
     setIsExamActive(false);
     setShowResult(false);
+    setShowReview(false);
     setSelectedGrade(null);
   };
 
@@ -135,7 +151,7 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div>
-                <h2 className="text-xl font-display font-bold text-slate-900">
+                <h2 className="text-xl font-bold tracking-tight text-slate-900">
                   BİLSEM Tablet Deneme Sınavları
                 </h2>
                 <p className="text-xs text-slate-500">
@@ -149,7 +165,7 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
           </div>
 
           <div className="text-center max-w-xl mx-auto space-y-1">
-            <h3 className="text-lg font-display font-black text-slate-800">
+            <h3 className="text-lg font-black tracking-tight text-slate-800">
               Lütfen Sınıf Seviyenizi Seçiniz
             </h3>
             <p className="text-xs text-slate-500">
@@ -343,14 +359,20 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
                     }`}
                   >
                     <span
-                      className={`w-8 h-8 rounded-xl flex items-center justify-center font-black text-sm shrink-0 ${
-                        isSelected ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-700'
+                      className={`w-9 h-9 rounded-xl flex items-center justify-center font-black text-sm shrink-0 ${
+                        isSelected ? 'bg-indigo-600 text-white shadow' : 'bg-slate-100 text-slate-700'
                       }`}
                     >
                       {opt.label}
                     </span>
-                    <div className="flex-1 text-left font-semibold text-xs sm:text-sm text-slate-800">
-                      {opt.text}
+                    <div className="flex-1 text-left font-semibold text-xs sm:text-sm text-slate-800 flex items-center gap-3 min-w-0">
+                      {opt.visual && (
+                        <div
+                          className="shrink-0 flex items-center justify-center"
+                          dangerouslySetInnerHTML={{ __html: opt.visual }}
+                        />
+                      )}
+                      <span>{opt.text}</span>
                     </div>
                   </button>
                 );
@@ -401,7 +423,7 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
             <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-3xl flex items-center justify-center mx-auto text-3xl shadow-inner">
               <Award className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-display font-black text-slate-900">
+            <h3 className="text-2xl font-black tracking-tight text-slate-900">
               {selectedGrade}. Sınıf BİLSEM Değerlendirme Karnesi
             </h3>
             <p className="text-xs text-slate-500">
@@ -474,6 +496,77 @@ export const BilsemCenter: React.FC<BilsemCenterProps> = ({
                     </span>
                   )}
                 </div>
+
+                {/* Soru & Çözüm Analizi Açılır Buton */}
+                <button
+                  type="button"
+                  onClick={() => setShowReview(!showReview)}
+                  className="w-full py-3 bg-amber-50 hover:bg-amber-100 border border-amber-300 text-amber-900 font-bold rounded-2xl text-xs transition flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+                >
+                  <HelpCircle className="w-4 h-4 text-amber-600" />
+                  <span>{showReview ? 'Soru Çözüm Açıklamalarını Kapat' : 'Tüm Soruları ve Adım Adım Çözüm Rehberini İncele'}</span>
+                  {showReview ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                </button>
+
+                {/* Soru Çözüm Detay Listesi */}
+                {showReview && (
+                  <div className="space-y-4 pt-2 max-h-[460px] overflow-y-auto pr-1">
+                    {examQuestions.map((q, idx) => {
+                      const userAnsIdx = userAnswers[idx];
+                      const correctAnsIdx = q.options.findIndex((o) => o.isCorrect);
+                      const isCorrect = userAnsIdx === correctAnsIdx;
+                      const userOpt = userAnsIdx !== undefined ? q.options[userAnsIdx] : null;
+                      const correctOpt = q.options[correctAnsIdx];
+
+                      return (
+                        <div
+                          key={q.num}
+                          className={`p-4 rounded-2xl border-2 text-left space-y-2.5 ${
+                            isCorrect ? 'bg-emerald-50/50 border-emerald-200' : 'bg-rose-50/40 border-rose-200'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs font-bold text-slate-700">
+                              Soru {q.num} • <span className="text-indigo-600">{q.cat}</span>
+                            </span>
+                            <span
+                              className={`text-[10px] font-black px-2.5 py-0.5 rounded-full flex items-center gap-1 ${
+                                isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
+                              }`}
+                            >
+                              {isCorrect ? <CheckCircle2 className="w-3 h-3" /> : <XCircle className="w-3 h-3" />}
+                              {isCorrect ? 'Doğru' : userAnsIdx !== undefined ? 'Yanlış' : 'Boş'}
+                            </span>
+                          </div>
+
+                          <p className="text-xs font-semibold text-slate-800">{q.prompt}</p>
+
+                          <div className="flex flex-wrap items-center gap-3 text-xs">
+                            <div>
+                              <span className="text-slate-500">Senin Cevabın: </span>
+                              <b className={isCorrect ? 'text-emerald-700' : 'text-rose-600'}>
+                                {userOpt ? `${userOpt.label}) ${userOpt.text}` : 'Boş Bırakıldı'}
+                              </b>
+                            </div>
+                            {!isCorrect && (
+                              <div>
+                                <span className="text-slate-500">Doğru Cevap: </span>
+                                <b className="text-emerald-700">{correctOpt.label}) {correctOpt.text}</b>
+                              </div>
+                            )}
+                          </div>
+
+                          {q.explanation && (
+                            <div className="p-3 bg-white/90 border border-slate-200 rounded-xl text-[11px] text-slate-700 leading-relaxed">
+                              <span className="font-bold text-indigo-700 block mb-0.5">💡 Çözüm Mantığı:</span>
+                              {q.explanation}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </>
             );
           })()}

@@ -95,7 +95,7 @@ export const ColorsGame: React.FC<ColorsGameProps> = ({ onAwardStars }) => {
             <Palette className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-xl font-display font-bold text-slate-900">
+            <h3 className="text-xl font-bold tracking-tight text-slate-900">
               3. Colors (Kromatik Latin Karesi)
             </h3>
             <p className="text-slate-500 text-xs">

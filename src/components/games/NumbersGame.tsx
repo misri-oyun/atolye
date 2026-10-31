@@ -126,7 +126,7 @@ export const NumbersGame: React.FC<NumbersGameProps> = ({ onAwardStars }) => {
             <Calculator className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-xl font-display font-bold text-slate-900">
+            <h3 className="text-xl font-bold tracking-tight text-slate-900">
               2. Numbers (Sayısal Mantık & İşlem Kısıtları)
             </h3>
             <p className="text-slate-500 text-xs">

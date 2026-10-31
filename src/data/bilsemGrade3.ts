@@ -22,10 +22,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: 'Tam artı ve çapraz çizgi', isCorrect: false },
-      { label: 'B', text: 'Yatay çizgi ile çapraz çizgi (Ortak dikey çizgi elenir)', isCorrect: true },
+      { label: 'B', text: 'Yatay çizgi ile çapraz çizgi ', isCorrect: true },
       { label: 'C', text: 'Sadece dikey çizgi', isCorrect: false },
       { label: 'D', text: 'Boş kare', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Yatay çizgi ile çapraz çizgi. Gerekçe: Ortak dikey çizgi elenir.'
   },
   {
     num: 2,
@@ -39,10 +40,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '18', isCorrect: false },
-      { label: 'B', text: '16 (2 kat × 8 küp = 16)', isCorrect: true },
+      { label: 'B', text: '16 ', isCorrect: true },
       { label: 'C', text: '14', isCorrect: false },
       { label: 'D', text: '15', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 16. Gerekçe: 2 kat × 8 küp = 16.'
   },
   {
     num: 3,
@@ -66,16 +68,19 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '● + ● = ■ + ▲, ■ = ▲ + ▲ ve ● = 6 kg olduğuna göre, ▲ kaç kg\'dır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>2● = 12 kg ➔ ■ + ▲ = 12 kg</div>
-        <div>■ = 2▲ olduğuna göre 3▲ = 12 kg ➔ ▲ = ?</div>
+        <div>1. Terazi: 2● = 12 kg</div>
+        <div>2. Terazi: ■ + ▲ = 2●</div>
+        <div>3. Terazi: ■ = 2▲</div>
+        <div class="text-teal-700 font-black">▲ = ? kg</div>
       </div>
     `,
     options: [
       { label: 'A', text: '2 kg', isCorrect: false },
       { label: 'B', text: '3 kg', isCorrect: false },
-      { label: 'C', text: '4 kg (3▲ = 12 ➔ ▲ = 4)', isCorrect: true },
+      { label: 'C', text: '4 kg ', isCorrect: true },
       { label: 'D', text: '5 kg', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 4 kg. Gerekçe: 3▲ = 12 ➔ ▲ = 4.'
   },
   {
     num: 5,
@@ -94,11 +99,12 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
       </div>
     `,
     options: [
-      { label: 'A', text: 'Saat Yönünde (↻)', isCorrect: false },
-      { label: 'B', text: 'Saat Yönünün Tersine (↺ Çapraz kayış ters çevirir)', isCorrect: true },
+      { label: 'A', text: 'Saat Yönünde ', isCorrect: false },
+      { label: 'B', text: 'Saat Yönünün Tersine ', isCorrect: true },
       { label: 'C', text: 'Dönmez, kayış kayar', isCorrect: false },
       { label: 'D', text: 'Önce sağa sonra sola döner', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Saat Yönünün Tersine. Gerekçe: ↺ Çapraz kayış ters çevirir.'
   },
   {
     num: 6,
@@ -122,15 +128,16 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'Bir küp açınımında karşılıklı yüzlerin toplamı 10\'dur. Taban yüzeyinde 3 varsa, tavan yüzeyinde hangi sayı yer alır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs text-slate-700 shadow-sm">
-        Zıt Yüzler Toplamı = 10 ➔ 3 + ? = 10
+        Kural: Karşılıklı (zıt) yüzlerdeki sayıların toplamı daima 10'dur. [Üst Yüz: 3] ➔ Alt Yüz = ?
       </div>
     `,
     options: [
       { label: 'A', text: '5', isCorrect: false },
       { label: 'B', text: '6', isCorrect: false },
-      { label: 'C', text: '7 (10 - 3 = 7)', isCorrect: true },
+      { label: 'C', text: '7 ', isCorrect: true },
       { label: 'D', text: '4', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 7. Gerekçe: 10 - 3 = 7.'
   },
   {
     num: 8,
@@ -164,10 +171,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '7', isCorrect: false },
-      { label: 'B', text: '8 (3 + 1 + 2 + 2 = 8)', isCorrect: true },
+      { label: 'B', text: '8 ', isCorrect: true },
       { label: 'C', text: '9', isCorrect: false },
       { label: 'D', text: '10', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 8. Gerekçe: 3 + 1 + 2 + 2 = 8.'
   },
   {
     num: 10,
@@ -175,15 +183,16 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'Her sayı kendinden önceki iki sayının toplamıdır: 1 ➔ 2 ➔ 3 ➔ 5 ➔ 8 ➔ 13 ➔ ?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-sm text-teal-800 shadow-sm">
-        1 ➔ 2 ➔ 3 ➔ 5 ➔ 8 ➔ 13 ➔ <span class="text-rose-600 font-black">[ 8 + 13 ] = ?</span>
+        1 ➔ 2 ➔ 3 ➔ 5 ➔ 8 ➔ 13 ➔ <span class="text-rose-600 font-black">?</span>
       </div>
     `,
     options: [
       { label: 'A', text: '19', isCorrect: false },
       { label: 'B', text: '20', isCorrect: false },
-      { label: 'C', text: '21 (8 + 13 = 21)', isCorrect: true },
+      { label: 'C', text: '21 ', isCorrect: true },
       { label: 'D', text: '24', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 21. Gerekçe: 8 + 13 = 21.'
   },
   {
     num: 11,
@@ -216,9 +225,10 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '1 küp', isCorrect: false },
       { label: 'B', text: '2 küp', isCorrect: false },
-      { label: 'C', text: '3 küp (Simetrik tepe görünür)', isCorrect: true },
+      { label: 'C', text: '3 küp ', isCorrect: true },
       { label: 'D', text: '4 küp', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 3 küp. Gerekçe: Simetrik tepe görünür.'
   },
   {
     num: 13,
@@ -235,7 +245,7 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: 'Tamamen siyah daire', isCorrect: false },
-      { label: 'B', text: 'İçinde beyaz haç (+) oyuğu olan siyah daire', isCorrect: true },
+      { label: 'B', text: 'İçinde beyaz artı oyuğu olan siyah daire', isCorrect: true },
       { label: 'C', text: 'Dört küçük siyah kare', isCorrect: false },
       { label: 'D', text: 'Boş beyaz zemin', isCorrect: false }
     ]
@@ -246,16 +256,18 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'Sol kolda 3 birim uzaklıkta 4 kg ağırlık vardır (3 × 4 = 12). Sağ kolda destek noktasına 2 birim uzaklıkta bir kefe varsa, denge için kaç kg konmalıdır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>Sol Tork: 3 br × 4 kg = 12</div>
-        <div>Sağ Tork: 2 br × ? kg = 12 ➔ ? = 12 ÷ 2</div>
+        <div>Destek Noktasına Uzaklıklar: Sol = 3 birim, Sağ = 2 birim</div>
+        <div>Sol kefedeki yük: 4 kg</div>
+        <div class="text-teal-700 font-black">Kaldıracın dengede kalması için Sağ kefe = ? kg</div>
       </div>
     `,
     options: [
       { label: 'A', text: '5 kg', isCorrect: false },
-      { label: 'B', text: '6 kg (12 ÷ 2 = 6)', isCorrect: true },
+      { label: 'B', text: '6 kg ', isCorrect: true },
       { label: 'C', text: '8 kg', isCorrect: false },
       { label: 'D', text: '4 kg', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6 kg. Gerekçe: 12 ÷ 2 = 6.'
   },
   {
     num: 15,
@@ -289,9 +301,10 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '6', isCorrect: false },
       { label: 'B', text: '7', isCorrect: false },
-      { label: 'C', text: '8 (3 + 3 + 2 = 8)', isCorrect: true },
+      { label: 'C', text: '8 ', isCorrect: true },
       { label: 'D', text: '9', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 8. Gerekçe: 3 + 3 + 2 = 8.'
   },
   {
     num: 17,
@@ -318,16 +331,18 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'A çarkı 18 dişlidir. B çarkı 6 dişlidir. A çarkı 2 tam tur döndüğünde B çarkı kaç tur döner?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>Diş Oranı: 18 ÷ 6 = 3 kat daha hızlı</div>
-        <div>A (2 tur) ➔ B = 2 × 3 = ? Tur</div>
+        <div>A Dişlisi: 18 diş (2 tam tur atıyor)</div>
+        <div>B Dişlisi: 6 diş</div>
+        <div class="text-teal-700 font-black">B Dişlisi = ? Tur döner</div>
       </div>
     `,
     options: [
       { label: 'A', text: '3 tur', isCorrect: false },
       { label: 'B', text: '4 tur', isCorrect: false },
-      { label: 'C', text: '6 tur (2 × 3 = 6)', isCorrect: true },
+      { label: 'C', text: '6 tur ', isCorrect: true },
       { label: 'D', text: '8 tur', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6 tur. Gerekçe: 2 × 3 = 6.'
   },
   {
     num: 19,
@@ -341,9 +356,10 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: 'Yıldız', isCorrect: false },
       { label: 'B', text: 'Daire', isCorrect: false },
-      { label: 'C', text: 'Arka yüzdeki sembol (Daire ön yüze iner)', isCorrect: true },
+      { label: 'C', text: 'Arka yüzdeki sembol ', isCorrect: true },
       { label: 'D', text: 'Sağ yüzdeki sembol', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Arka yüzdeki sembol. Gerekçe: Daire ön yüze iner.'
   },
   {
     num: 20,
@@ -351,15 +367,16 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '1 (+2)➔ 3 (×3)➔ 6 (+2)➔ 18 (×3)➔ 21 (+2)➔ 63 ➔ ? Sıradaki işlem +2 olduğuna göre sonuç kaçtır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-sm text-teal-800 shadow-sm">
-        63 ➔ <span class="text-rose-600 font-black">[ +2 ] = ?</span>
+        63 ➔ <span class="text-rose-600 font-black">?</span>
       </div>
     `,
     options: [
       { label: 'A', text: '126', isCorrect: false },
-      { label: 'B', text: '65 (63 + 2 = 65)', isCorrect: true },
+      { label: 'B', text: '65 ', isCorrect: true },
       { label: 'C', text: '67', isCorrect: false },
       { label: 'D', text: '189', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 65. Gerekçe: 63 + 2 = 65.'
   },
   {
     num: 21,
@@ -388,10 +405,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: 'Deniz', isCorrect: false },
-      { label: 'B', text: 'Can (Sıralama: Deniz > Can > Ali > Burak)', isCorrect: true },
+      { label: 'B', text: 'Can ', isCorrect: true },
       { label: 'C', text: 'Ali', isCorrect: false },
       { label: 'D', text: 'Burak', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Can. Gerekçe: Sıralama: Deniz > Can > Ali > Burak.'
   },
   {
     num: 23,
@@ -399,15 +417,16 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'Tabanda 3x3 (9 küp), ortada 2x2 (4 küp) ve en tepede 1 küp olan yapıda en alt katın merkezindeki 1 küp boştur. Toplam küp sayısı kaçtır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs text-teal-800 shadow-sm">
-        Taban (9 - 1 = 8) + Orta (4) + Tepe (1) = ?
+        Kare Piramit Blokta Toplam Küp Sayısı = ?
       </div>
     `,
     options: [
       { label: 'A', text: '14', isCorrect: false },
-      { label: 'B', text: '13 (8 + 4 + 1 = 13)', isCorrect: true },
+      { label: 'B', text: '13 ', isCorrect: true },
       { label: 'C', text: '12', isCorrect: false },
       { label: 'D', text: '11', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 13. Gerekçe: 8 + 4 + 1 = 13.'
   },
   {
     num: 24,
@@ -421,9 +440,10 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '1. Ok', isCorrect: false },
       { label: 'B', text: '4. Ok', isCorrect: false },
-      { label: 'C', text: '6. Ok (Aşağı bakması gerekirken yukarı bakıyor)', isCorrect: true },
+      { label: 'C', text: '6. Ok ', isCorrect: true },
       { label: 'D', text: '7. Ok', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6. Ok. Gerekçe: Aşağı bakması gerekirken yukarı bakıyor.'
   },
   {
     num: 25,
@@ -431,16 +451,18 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '■ × ● = 24, ■ + ● = 11 ve ■ > ● olduğuna göre ■ - ● kaçtır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>Çarpımları 24, Toplamları 11 olan sayılar: 8 ve 3</div>
-        <div>■ = 8, ● = 3 ➔ 8 - 3 = ?</div>
+        <div>■ × ● = 24</div>
+        <div>■ + ● = 11 (■ > ●)</div>
+        <div class="text-teal-700 font-black">■ - ● = ?</div>
       </div>
     `,
     options: [
       { label: 'A', text: '3', isCorrect: false },
-      { label: 'B', text: '5 (8 - 3 = 5)', isCorrect: true },
+      { label: 'B', text: '5 ', isCorrect: true },
       { label: 'C', text: '7', isCorrect: false },
       { label: 'D', text: '2', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 5. Gerekçe: 8 - 3 = 5.'
   },
   {
     num: 26,
@@ -460,10 +482,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '4', isCorrect: false },
-      { label: 'B', text: '5 (3² + 4² = 25 ➔ √25 = 5)', isCorrect: true },
+      { label: 'B', text: '5 ', isCorrect: true },
       { label: 'C', text: '7', isCorrect: false },
       { label: 'D', text: '6', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 5. Gerekçe: 3² + 4² = 25 ➔ √25 = 5.'
   },
   {
     num: 27,
@@ -479,10 +502,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: 'Yarım Daire', isCorrect: false },
-      { label: 'B', text: 'Halka / Simit Şekli (Annulus)', isCorrect: true },
+      { label: 'B', text: 'Halka / Simit Şekli ', isCorrect: true },
       { label: 'C', text: 'Nokta', isCorrect: false },
       { label: 'D', text: 'Üçgen', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: Halka / Simit Şekli. Gerekçe: Annulus.'
   },
   {
     num: 28,
@@ -490,16 +514,18 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'Sol kefede 18 kg, sağ kefede 6 kg vardır. Terazinin dengelenmesi için sol kefeden sağ kefeye kaç kg aktarılmalıdır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>Toplam: 18 + 6 = 24 kg ➔ Denge: 12 kg - 12 kg</div>
-        <div>18 - 12 = ? kg aktarılmalı</div>
+        <div>Sol Kefe: 18 kg ağırlık</div>
+        <div>Sağ Kefe: 6 kg ağırlık</div>
+        <div class="text-teal-700 font-black">Terazinin yatay dengede durması için soldan sağa kaç kg aktarılmalı?</div>
       </div>
     `,
     options: [
       { label: 'A', text: '12 kg', isCorrect: false },
-      { label: 'B', text: '6 kg (18 - 6 = 12 kg fark ➔ 12 / 2 = 6)', isCorrect: true },
+      { label: 'B', text: '6 kg ', isCorrect: true },
       { label: 'C', text: '8 kg', isCorrect: false },
       { label: 'D', text: '4 kg', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6 kg. Gerekçe: 18 - 6 = 12 kg fark ➔ 12 / 2 = 6.'
   },
   {
     num: 29,
@@ -534,10 +560,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '10', isCorrect: false },
-      { label: 'B', text: '11 (9 + 2 = 11)', isCorrect: true },
+      { label: 'B', text: '11 ', isCorrect: true },
       { label: 'C', text: '12', isCorrect: false },
       { label: 'D', text: '13', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 11. Gerekçe: 9 + 2 = 11.'
   },
   {
     num: 31,
@@ -593,15 +620,16 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '1 ➔ 4 (2²) ➔ 9 (3²) ➔ 16 (4²) ➔ 25 (5²) ➔ ? (6²)',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-sm text-teal-800 shadow-sm">
-        1 ➔ 4 ➔ 9 ➔ 16 ➔ 25 ➔ <span class="text-rose-600 font-black">[ 6² ] = ?</span>
+        1 ➔ 4 ➔ 9 ➔ 16 ➔ 25 ➔ <span class="text-rose-600 font-black">?</span>
       </div>
     `,
     options: [
       { label: 'A', text: '30', isCorrect: false },
       { label: 'B', text: '32', isCorrect: false },
-      { label: 'C', text: '36 (6² = 36)', isCorrect: true },
+      { label: 'C', text: '36 ', isCorrect: true },
       { label: 'D', text: '49', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 36. Gerekçe: 6² = 36.'
   },
   {
     num: 35,
@@ -631,10 +659,11 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     `,
     options: [
       { label: 'A', text: '15°', isCorrect: false },
-      { label: 'B', text: '30° (360° ÷ 12 = 30°)', isCorrect: true },
+      { label: 'B', text: '30° ', isCorrect: true },
       { label: 'C', text: '45°', isCorrect: false },
       { label: 'D', text: '60°', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 30°. Gerekçe: 360° ÷ 12 = 30°.'
   },
   {
     num: 37,
@@ -642,15 +671,16 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: 'Önden bakıldığında 4 sütun: yükseklikleri 1, 3, 2, 4 olan yapıda her sütunun arkasında 1\'er küp daha bulunmaktadır. Toplam kaç küp vardır?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs text-teal-800 shadow-sm">
-        Ön sıra: 1 + 3 + 2 + 4 = 10 küp | Arka sıra: 4 küp ➔ Toplam ?
+        İki sıra halinde dizilmiş blok yapıda toplam kaç küp vardır?
       </div>
     `,
     options: [
       { label: 'A', text: '10', isCorrect: false },
       { label: 'B', text: '12', isCorrect: false },
-      { label: 'C', text: '14 (10 önde + 4 arkada = 14)', isCorrect: true },
+      { label: 'C', text: '14 ', isCorrect: true },
       { label: 'D', text: '16', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 14. Gerekçe: 10 önde + 4 arkada = 14.'
   },
   {
     num: 38,
@@ -664,26 +694,29 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     options: [
       { label: 'A', text: '3', isCorrect: false },
       { label: 'B', text: '4', isCorrect: false },
-      { label: 'C', text: '6 (3 köşe çifti + 3 kenar çifti)', isCorrect: true },
+      { label: 'C', text: '6 ', isCorrect: true },
       { label: 'D', text: '8', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6. Gerekçe: 3 köşe çifti + 3 kenar çifti.'
   },
   {
     num: 39,
     cat: 'Sayısal Eşitlik Mantığı',
     prompt: '3A + 2B = 22 ve B = 2 olduğuna göre A kaçtır?',
     visual: `
-      <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm">
-        <div>3A + 2(2) = 22 ➔ 3A + 4 = 22</div>
-        <div>3A = 18 ➔ A = ?</div>
+      <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs space-y-1 shadow-sm font-mono">
+        <div>3A + 2B = 22</div>
+        <div>B = 2</div>
+        <div class="text-teal-700 font-black">A = ?</div>
       </div>
     `,
     options: [
       { label: 'A', text: '5', isCorrect: false },
-      { label: 'B', text: '6 (3A = 18 ➔ A = 6)', isCorrect: true },
+      { label: 'B', text: '6 ', isCorrect: true },
       { label: 'C', text: '7', isCorrect: false },
       { label: 'D', text: '4', isCorrect: false }
-    ]
+    ],
+    explanation: 'Doğru Çözüm: 6. Gerekçe: 3A = 18 ➔ A = 6.'
   },
   {
     num: 40,
@@ -691,7 +724,7 @@ export const GRADE_3_EXAM_40_QUESTIONS: BilsemQuestion[] = [
     prompt: '3x3 matriste her satırda: Şekil (Kare, Daire, Eşkenar Dörtgen), İç Dolgu (Dikey, Yatay, Çapraz Çizgili), Nokta Konumu (Sol Üst, Merkez, Sağ Alt). Eksik olan hücre hangisidir?',
     visual: `
       <div class="p-3 bg-white rounded-2xl border text-center font-bold text-xs text-teal-800 shadow-sm">
-        Eksik Özellikler: [Çapraz Çizgili] + [Eşkenar Dörtgen] + [Sağ Altta Nokta]
+        3×3 Matriste Soru İşareti (?) Yerine Hangi Kombinasyon Gelmelidir?
       </div>
     `,
     options: [

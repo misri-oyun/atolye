@@ -101,6 +101,7 @@ export interface GeniusCubeLevel {
 export interface BilsemOption {
   label: 'A' | 'B' | 'C' | 'D';
   text: string;
+  visual?: string; // Optional SVG or HTML snippet for non-verbal choices
   isCorrect: boolean;
 }
 
@@ -110,4 +111,5 @@ export interface BilsemQuestion {
   prompt: string;
   visual: string; // SVG or HTML visual snippet
   options: BilsemOption[];
+  explanation?: string; // Step-by-step pedagogical explanation shown after test completion
 }

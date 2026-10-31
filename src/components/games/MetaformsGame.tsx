@@ -85,7 +85,7 @@ export const MetaformsGame: React.FC<MetaformsGameProps> = ({ onAwardStars }) =>
             <Shapes className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-xl font-display font-bold text-slate-900">
+            <h3 className="text-xl font-bold tracking-tight text-slate-900">
               1. MetaForms (Görsel Tümdengelim & Kısıt Çözme)
             </h3>
             <p className="text-slate-500 text-xs">

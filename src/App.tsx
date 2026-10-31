@@ -15,7 +15,7 @@ import { LookLookGame } from './components/games/LookLookGame';
 import { GeniusCubeGame } from './components/games/GeniusCubeGame';
 import { BilsemCenter } from './components/bilsem/BilsemCenter';
 import { TabType, UserState } from './types';
-import { Shapes, Calculator, Palette, TableCellsMerge, Eye, Boxes, Download } from 'lucide-react';
+import { Shapes, Calculator, Palette, TableCellsMerge, Eye, Boxes } from 'lucide-react';
 
 const STORAGE_KEY = 'misri_user_session';
 
@@ -176,15 +176,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <span>© 2026 Misri Dijital Akıl Oyunları Atölyesi. Tüm hakları saklıdır.</span>
           <div className="flex items-center gap-3">
-            <span className="text-slate-400 hidden sm:inline">BİLSEM & Akıl Oyunları</span>
-            <a
-              href="/atolye.html"
-              download="index.html"
-              className="px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-xs transition shadow-sm flex items-center gap-1.5 cursor-pointer active:scale-95"
-            >
-              <Download className="w-4 h-4" />
-              <span>Tek Tıkla GitHub index.html İndir</span>
-            </a>
+            <span className="text-slate-400">BİLSEM & Akıl Oyunları Atölyesi</span>
           </div>
         </div>
       </footer>

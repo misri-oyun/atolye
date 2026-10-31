@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({
             <Brain className="w-5 h-5" />
           </div>
           <div>
-            <h1 className="text-base sm:text-lg font-display font-black text-slate-900 tracking-tight leading-none">
+            <h1 className="text-base sm:text-lg font-black text-slate-900 tracking-tight leading-none">
               MİSRİ DİJİTAL
             </h1>
             <span className="text-[10px] font-bold tracking-wider text-indigo-600 uppercase">
